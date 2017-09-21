@@ -11,4 +11,20 @@ export class HomePage {
 
   }
 
+  material() {
+    this.navCtrl.push('MaterialPage');
+  }
+
+  submaterial() {
+    this.navCtrl.push('SubMaterialPage');
+  }
+
+  menulist() {
+    this.navCtrl.push('MenuListPage');
+  }
+
+  detail() {
+    this.navCtrl.push('DetailPage');
+  }
+
 }
