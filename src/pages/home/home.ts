@@ -11,20 +11,20 @@ export class HomePage {
 
   }
 
-  material() {
-    this.navCtrl.push('MaterialPage');
-  }
+  // material() {
+  //   this.navCtrl.push('MaterialPage');
+  // }
 
-  submaterial() {
-    this.navCtrl.push('SubMaterialPage');
-  }
+  // submaterial() {
+  //   this.navCtrl.push('SubMaterialPage');
+  // }
 
-  menulist() {
-    this.navCtrl.push('MenuListPage');
-  }
+  // menulist() {
+  //   this.navCtrl.push('MenuListPage');
+  // }
 
-  detail() {
-    this.navCtrl.push('DetailPage');
-  }
+  // detail() {
+  //   this.navCtrl.push('DetailPage');
+  // }
 
 }
