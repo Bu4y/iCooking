@@ -14,12 +14,14 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'sub-material.html',
 })
 export class SubMaterialPage {
-
+  subMaterial = ['ผักบุ้ง', 'กะเพรา', 'มะนาว', 'คะน้า', 'หัวหอม', 'ผักกาด'];
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad SubMaterialPage');
   }
-
+  gotoMenulist() {
+    this.navCtrl.push('MenuListPage');
+  }
 }
