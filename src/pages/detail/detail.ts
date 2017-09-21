@@ -15,7 +15,16 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class DetailPage {
 
+  detail = {
+    name: '',
+    image: '',
+    detail: '',
+    material: [''],
+    step: ['']
+  }
+
   constructor(public navCtrl: NavController, public navParams: NavParams) {
+    this.detail = this.navParams.data;
   }
 
   ionViewDidLoad() {
