@@ -21,10 +21,16 @@
       <p>{{ detail.detail }}</p>
     </ion-item>
   </ion-list>
-  <ion-item-divider color="light" no-lines>รายละเอียด</ion-item-divider>
+  <ion-item-divider color="light" no-lines>วัตถุดิบ</ion-item-divider>
   <ion-list>
     <ion-item *ngFor="let material of detail.material">
       {{ material }}
+    </ion-item>
+  </ion-list>
+  <ion-item-divider color="light" no-lines>วิธีทำ</ion-item-divider>
+  <ion-list>
+    <ion-item *ngFor="let step of detail.step">
+      {{ step }}
     </ion-item>
   </ion-list>
 </ion-content>
