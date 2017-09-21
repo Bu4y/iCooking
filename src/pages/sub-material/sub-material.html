@@ -14,13 +14,16 @@
 
 
 <ion-content padding>
-<ion-list radio-group>
-  <ion-item *ngFor="let submenu of subMaterial">
-    <ion-label>{{submenu}}</ion-label>
-    <ion-radio value="{{submenu}}"></ion-radio>
-  </ion-item>
-  
-</ion-list>
+  <ion-list radio-group>
+    <ion-item *ngFor="let submenu of subMaterial">
+      <ion-avatar item-left>
+        <img src="{{submenu.image}}">
+      </ion-avatar>
+      <ion-label>{{submenu.name}}</ion-label>
+      <ion-radio value="{{submenu.name}}"></ion-radio>
+    </ion-item>
+
+  </ion-list>
 </ion-content>
 <ion-footer>
   <button ion-button full block (click)="gotoMenulist()">ยืนยัน</button>
