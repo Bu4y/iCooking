@@ -16,8 +16,11 @@
 <ion-content padding>
   <ion-list radio-group>
     <ion-item *ngFor="let itm of materials">
-      <ion-label>{{itm}}</ion-label>
-      <ion-radio value="{{itm}}"></ion-radio>
+      <ion-avatar item-left>
+        <img src="{{itm.img}}">
+      </ion-avatar>
+      <ion-label>{{itm.name}}</ion-label>
+      <ion-radio value="{{itm.name}}"></ion-radio>
     </ion-item>
   </ion-list>
 </ion-content>
