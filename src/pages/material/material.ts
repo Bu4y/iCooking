@@ -19,8 +19,8 @@ export class MaterialPage {
     { name: 'ไก่', img: './assets/material-images/chicken.jpg' },
     { name: 'เนื้อ', img: './assets/material-images/ox.jpg' },
     { name: 'กุ้ง', img: './assets/material-images/kung.png' },
-    { name: 'ปลาหมึก', img: '/assets/material-images/fish-ink.jpg' },
-    { name: 'ยุง', img: '/assets/material-images/yung.jpg' }
+    { name: 'ปลาหมึก', img: './assets/material-images/fish-ink.jpg' },
+    { name: 'ยุง', img: './assets/material-images/yung.jpg' }
   ];
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
