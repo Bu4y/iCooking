@@ -7,12 +7,21 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>sub-material</ion-title>
+    <ion-title>เลือกวัตถุดิบรอง</ion-title>
   </ion-navbar>
 
 </ion-header>
 
 
 <ion-content padding>
-
+<ion-list radio-group>
+  <ion-item *ngFor="let submenu of subMaterial">
+    <ion-label>{{submenu}}</ion-label>
+    <ion-radio value="{{submenu}}"></ion-radio>
+  </ion-item>
+  
+</ion-list>
 </ion-content>
+<ion-footer>
+  <button ion-button full block (click)="gotoMenulist()">ยืนยัน</button>
+</ion-footer>

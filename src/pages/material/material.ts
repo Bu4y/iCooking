@@ -14,12 +14,16 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'material.html',
 })
 export class MaterialPage {
-
+  materials = ['หมู', 'ไก่', 'เนื้อ', 'กุ้ง', 'ปลาหมึก', 'ยุง'];
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad MaterialPage');
+  }
+
+  subMaterial() {
+    this.navCtrl.push('SubMaterialPage');
   }
 
 }
